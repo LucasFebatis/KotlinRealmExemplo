@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.activity.MainActivity">
+
+    <!-- RecyclerView, Adicionado atraves do Gradle App com a
+    seguinte linha: implementation 'com.android.support:recyclerview-v7:28.0.0'
+    Usuado como Lista, em MainActivity.kt vou buscar os usuarios no
+    Gradle e mostrar para o usuario atravez desse RecyclerView-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvItens"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!-- FloatingActionButton, ou simplesmente FAB, usuado como botão
+    nesse caso, quando clicado vou enviar o usuario para a
+    AddEditarUsuarioActivity.kt -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
